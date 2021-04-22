@@ -48,6 +48,11 @@ ul {
   color: var(--secondary-text-color);
 }
 
+.page-header {
+  padding: 25px 0px;
+  border-bottom: 1px solid #ececec;
+}
+
 body {
   font-family: var(--primary-font-famaly);
   font-size: var(--primary-font-sise);
@@ -108,13 +113,12 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .container {
   width: 1200px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -161,7 +165,7 @@ body {
 .hero-section {
   background-color: var(--hero-bg-color);
   min-height: 600px;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +211,7 @@ body {
 }
 
 .features-item {
-  flex-basis: calc((100% - 30px * 4) / 4);
+  width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -246,7 +250,7 @@ body {
 
 .what-we-do-item {
   display: flex;
-  flex-basis: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -283,12 +287,11 @@ body {
 .team-card-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--header-bg-color);
 }
 
 .team-card {
-  /* display: flex;
-  flex-direction: row; */
-  flex-basis: calc(100% / 4 - 30px);
+  width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 
@@ -309,6 +312,8 @@ body {
 
 .section-footer {
   background-color: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .accend-logo-footer {
@@ -340,11 +345,6 @@ body {
 }
 
 .buttons {
-  /* cursor: pointer;
-  font-family: inherit;
-  background: #f5f4fa;
-  border-radius: 4px; */
-
   font-weight: var(--sub-title-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.6;
@@ -368,6 +368,7 @@ body {
 }
 
 /* portfolio.html */
+
 .web-site {
   margin-bottom: 50px;
   display: flex;
@@ -386,7 +387,7 @@ body {
 }
 
 .portfolio-card {
-  flex-basis: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 30px);
   /* flex-basis: calc((100% - 30px * 3) / 3); */
   margin-left: 30px;
   margin-top: 30px;
